@@ -1,0 +1,943 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+/*
+==========================================
+    Google fonts
+==========================================
+*/
+/*font-family: 'Raleway', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900');
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+
+html,
+body {
+    height: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+#contant-top-space {
+    margin-top: 70px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+
+/*
+==========================================
+    Header main Menu Css
+==========================================
+*/
+.header-main {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+.header-main:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    left: 0;
+    z-index: -1;
+    opacity: .49;
+    background: #393838;
+    top: 0;
+}
+
+nav.main-menu ul {
+    float: right;
+}
+
+nav.main-menu ul li {
+    float: left;
+    margin-left: 26px;
+}
+
+nav.main-menu ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    padding: 0 0;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    transition: .3s;
+}
+
+nav.main-menu ul li a:hover {
+    color: #fe320a;
+}
+
+
+/*
+==========================================
+    Header img Css
+==========================================
+*/
+.header-img {
+    background: url('../img/header-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.header-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #252525;
+    opacity: .42;
+    z-index: -1;
+}
+
+.header-img .container,
+.header-img .row,
+.header-img .col-md-12 {
+    height: 100%;
+}
+
+.d-table {
+    display: table;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.d-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.header-content {
+    color: #fff;
+    margin-top: 95px;
+}
+
+.header-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.header-content h1 span {
+    color: #fe320a;
+    font-weight: 700;
+}
+
+.header-content p {
+    max-width: 850px;
+    margin: 22px auto 35px auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.header-content a {
+    text-decoration: none;
+    color: #fff;
+    background: #fe320a;
+    transition: 3s;
+    padding: 9px 32px;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+
+}
+
+.header-content a:hover {
+    background: #fff;
+    color: #fe320a;
+}
+
+/*
+==========================================
+    About Css
+==========================================
+*/
+.nandine-about {
+    background: #f6f6f6;
+}
+
+.header h2::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 156px;
+    top: 100%;
+    left: 50%;
+    margin-top: 8px;
+    margin-left: -78px;
+    background: #ff0000;
+
+}
+
+.header h2 ::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #ff0000;
+    margin-left: -8px;
+    left: 50%;
+}
+
+.header h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+
+.header h2 span {
+    color: #ff0000;
+}
+
+/*
+==========================================
+    About Left Css
+==========================================
+*/
+.about-left {
+    position: relative;
+    text-align: center;
+}
+
+.about-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-left .about-left-details {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 12px 0;
+}
+
+.about-left .about-left-details::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #252525;
+    opacity: .69;
+    z-index: -1;
+}
+
+.about-left .about-left-details h4 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-weight: 600;
+}
+
+.about-left .about-left-details ul li {
+    display: inline;
+
+}
+
+.about-left .about-left-details ul li a {
+    display: inline-block;
+    font-size: 18px;
+    margin: 3px;
+    color: #fff;
+    background: #252525;
+    padding: 5px;
+    width: 35px;
+    transition: 3s;
+    height: 35px;
+    border-radius: 50px;
+
+}
+
+.about-left .about-left-details ul li a:hover {
+    background: #ffffff;
+    color: #252525;
+}
+
+/*
+==========================================
+    About Right Css
+==========================================
+*/
+.about-right h3 {
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.about-right p {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 26px;
+    margin-top: 40px;
+    color: #1e1e1e;
+}
+
+.about-right p strong {
+    color: #422c2c;
+}
+
+.about-right a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 22px;
+    border: 1px solid #ff0000;
+    transition: .5s;
+    background: #ff0000;
+}
+
+.about-right a:hover {
+    background: #422c2c;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+}
+
+/*
+==========================================
+    video Area Css
+==========================================
+*/
+.video-area {
+    background: url('../img/video-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    z-index: 0;
+    color: #fff;
+}
+
+.video-area .header-text h2 {
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.video-area .video-icon a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    display: inline-block;
+    width: 85px;
+    height: 85px;
+    transition: .10s;
+    line-height: 85px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    margin-top: 40px;
+}
+
+.video-area .video-icon a:hover {
+    background: #fff;
+    color: #000000;
+}
+
+.video-area:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    top: 0;
+    z-index: -1;
+    opacity: .60;
+    left: 0;
+}
+
+/*
+==========================================
+    Services Area Css
+==========================================
+*/
+.services-box {
+    margin-top: 70px;
+}
+
+.services-box i {
+    color: #ff0000;
+    font-size: 48px;
+}
+
+.services-box h4 {
+    font-size: 24px;
+    color: #151515;
+    margin: 13px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+.services-box p {
+    line-height: 24px;
+    color: #252525;
+}
+
+/*
+==========================================
+    Skill Area Css
+==========================================
+*/
+.skill {
+    background: #f3f3f3;
+}
+
+/*
+==========================================
+    Skill Area-left Css
+==========================================
+*/
+.skill-left h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #151515;
+}
+
+.skill-left p {
+    font-weight: 300;
+    color: #515151;
+    margin-top: 20px;
+    line-height: 26px;
+}
+
+.skill-left p:last-child {
+    margin-top: 30px;
+}
+
+/*
+==========================================
+    Skill Area-right Css
+==========================================
+*/
+.skill-right h3 {
+    font-size: 24px;
+    color: #1b1b1b;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+}
+
+.skill-right p {
+    font-weight: 300;
+    line-height: 26px;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color: #2c2b2b;
+    margin-top: 18px;
+}
+
+/*Nandine Skill bar*/
+
+.nandine-skill-bar .skillbar-item h5.skill-bar-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #2c2b2b;
+    font-weight: 400;
+    margin-top: 14px;
+    margin-bottom: -5px;
+}
+
+.nandine-skill-bar p {
+    margin-top: 0;
+}
+
+.nandine-skill-bar .skillbar {
+    background: #000;
+    height: 0px;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 10px 25px;
+    margin-bottom: 0 !important;
+}
+
+.nandine-skill-bar .skillbar p {
+    background: #ff0000 !important;
+    height: 10px;
+    top: 5.1px;
+    position: absolute;
+    left: 4px;
+}
+
+.nandine-skill-bar span.skill-bar-percent {
+    color: #fff;
+    top: -8px;
+    position: absolute;
+}
+
+/*Skill bar website css*/
+.skillbar {
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #ffffff;
+    background: #6adcfa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/*
+==========================================
+    Counter Area Css
+==========================================
+*/
+
+.counter {
+    background: url('../img/counter-bg.jpg');
+        background-position-x: 0%;
+        background-position-y: 0%;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-size: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    color: #fff;
+    background-attachment: fixed;
+}
+.counter::after{
+    content: '';
+    position: absolute;
+    background: #000000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    z-index: -1;
+}
+.counter-box i{
+    font-size: 22px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 48px;
+    margin-bottom: 6px;
+}
+.counter-box .counter-number{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+.counter-box .counter-name{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+/*
+==========================================
+    Portfolio Area Css
+==========================================
+*/
+.portfolio-menu{
+    text-align: center;
+}
+.portfolio-menu button{
+    color: #3c3c3c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .5s;
+    outline: none;
+}
+.portfolio-menu button:hover{
+    color:red;
+}
+.portfolio-item{
+    margin-top: 36px;
+    position: relative;
+    transition: .6s;
+}
+.portfolio-item img{
+    max-width: 100%;
+}
+.portfolio-item:hover .portfolio-item-hover{
+    visibility: visible;
+    opacity: 1;
+}
+.portfolio-item-hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f003;
+    transition: .6s;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+}
+.portfolio-item-hover a{
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+button.mixitup-control-active {
+    color: red;
+}
+/*
+==========================================
+    Team Area Css
+==========================================
+*/
+.team-item {
+    position: relative;
+}
+
+.team-item .team-item-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    color: #fff;
+}
+
+.team-item .team-item-hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff0000;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    visibility: hidden;
+    transition: .3s;
+}
+.team-item:hover .team-item-hover::after{
+    visibility: visible;
+    opacity: .44;
+}
+.team-hover-content {
+    background: #ff0000;
+    opacity: .88;
+    position: absolute;
+    width: 100%;
+    bottom: -77px;
+    height: auto;
+    text-align: center;
+    color: #fff;
+    transition: .3s;
+    padding: 10px 0;
+}
+.team-item:hover .team-hover-content{
+    bottom: 0;
+}
+h4.team-name {
+    text-transform: uppercase;
+}
+.team-hover-content ul{
+    margin-top: 10px;
+}
+.team-hover-content ul li {
+    display: inline;
+}
+
+.team-hover-content ul li a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 5px; 
+}
+/*
+==========================================
+    Testimonial Area css
+==========================================
+*/
+.testimonial{
+    background: url('../img/testimonial/testimonial-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #c8c0c0;
+    z-index: 0;
+}
+.testimonial::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .6;
+    z-index: -1;
+}
+.testimonial p{
+    font-weight: 300;
+}
+.testimonial .item img {
+    height: 71px;
+}
+.owl-carousel-testimonial img {
+    width: auto !important;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+h4.testimonial-name{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 20px 0;
+}
+/*
+==========================================
+    Blog Area Css
+==========================================
+*/
+.blog-item{
+    box-shadow: 0 0 15px #393838;
+}
+.blog-item img{
+    max-width: 100%;
+    border-bottom: 5px solid #464646;
+}
+article.blog-details{
+    padding: 19px 20px;
+}
+h2.blog-title{
+    font-family: 'Montserrat', sans-serif;
+    color: #433f3f;
+    font-size: 24px;
+    font-weight: 600;
+}
+article.blog-details .date{
+    text-transform: inherit;
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+article.blog-details p{
+    line-height: 24px;
+    font-family: 'Raleway', sans-serif;
+    color:#433f3f;
+    font-size: 14px;
+}
+a.blog-button{
+    text-decoration: none;
+    background: #252525;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 13px;
+    display: inline-block;
+    transition: .4s;
+    margin-top: 14px;
+    border: 1px solid #252525;
+}
+a.blog-button:hover{
+    background: transparent;
+    color:#252525;
+}
+.blog-details i.fa{
+    font-size: 12px;
+    color: #f6787b;
+    margin-right: 5px;
+}
+/*
+==========================================
+    Contact Us Area Css
+==========================================
+*/
+.contact{
+   background: url('../img/contact-bg.jpg');
+   background-size: cover;
+   position: relative;
+   background-attachment: fixed;
+   color: #fff;
+   z-index: 0;
+}
+.contact::after{
+    content: '';
+    background: #000000;
+    opacity: .55;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.contact input{
+    background: transparent;
+    border: 1px solid #fff;
+    margin-bottom: 25px;
+    height: 42px;
+}
+.contact input::placeholder,
+.contact textarea::placeholder{
+    color: #fff;
+}
+.contact textarea{
+    background: transparent;
+    border: 1px solid #fff;
+    margin-bottom: 25px;
+    height: 180px;
+    padding-top: 20px;
+}
+.contact button{
+    background: #ff0000;
+    border: 0;
+    font-size: 20px;
+    padding: 10px 32px;
+    transition: .4s;
+    border-radius:15px;
+}
+.contact button:hover{
+    background: #fff;
+    color: #ff0000;
+}
+.contact button i{
+    margin-left: 10px;
+}
+/*
+==========================================
+    Footer Area Css
+==========================================
+*/
+footer.footer{
+    background: #121111;
+    color: #fff;
+    padding: 30px 0;
+}
+.footer-icon ul li{
+    float: left;
+    margin-right: 15px;
+}
+.footer-icon ul li:last-child{
+    margin-right: 0;
+}
+.footer-icon ul li a{
+    color: #fff;
+}
+/*
+==========================================
+    Responsive Area Css
+==========================================
+*/
+nav.navbar.navbar-expand-lg.main-menu {
+    padding: 0;
+}
+nav.main-menu ul {
+    float: right;
+    margin: auto;
+}
+
+/*//////////////////////////////////////////////
+//           Section comment block           //
+/////////////////////////////////////////////*/
+
+
+
+/*//////  End of Section comment block  ///////*/
+
